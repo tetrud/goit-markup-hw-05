@@ -51,6 +51,15 @@
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+
+  cursor: pointer;
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: var(--primary-white-color);
+  color: var(--accent-color);
 }
 
 /* ====== SECTION ====== */
@@ -214,6 +223,8 @@
   border-radius: 50%;
 
   fill: var(--icon-color);
+
+  transition: background-color 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
 .icon-socials {
@@ -243,6 +254,8 @@
   border: 1px solid var(--icon-color);
   fill: var(--icon-color);
   border-radius: 4px;
+
+  transition: border 250ms var(--timing-function), fill 250ms var(--timing-function);
 }
 
 .client-item:hover .link,
@@ -292,6 +305,10 @@
   font-size: 16px;
   line-height: 1.62;
   letter-spacing: inherit;
+
+  cursor: pointer;
+
+  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
 }
 
 .btn-filter:hover,
