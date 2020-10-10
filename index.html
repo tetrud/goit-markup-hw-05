@@ -37,7 +37,6 @@
         </address>
       </div>
     </header>
-
     <main>
       <!-- Герой -->
       <section class="hero">
@@ -45,9 +44,8 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button type="button" class="modal-btn">Заказать услугу</button>
+        <button type="button" class="modal-btn" data-modal-open>Заказать услугу</button>
       </section>
-
       <!-- Преимущества -->
       <section class="section">
         <div class="conteiner">
@@ -72,7 +70,6 @@
           </ul>
         </div>
       </section>
-
       <!-- Проектирование -->
       <section class="section no-padding">
         <div class="conteiner">
@@ -99,7 +96,6 @@
           </ul>
         </div>
       </section>
-
       <!-- Команда -->
       <section class="section section-team">
         <div class="conteiner">
@@ -256,7 +252,6 @@
           </ul>
         </div>
       </section>
-
       <!-- Клиенты -->
       <section class="section">
         <div class="conteiner">
@@ -308,7 +303,6 @@
         </div>
       </section>
     </main>
-
     <!-- Подвал сайта-->
     <footer class="footer">
       <div class="conteiner footer-nav">
@@ -326,7 +320,6 @@
             </li>
           </ul>
         </div>
-
         <div class="socials-footer">
           <strong class="title-footer">присоединяйтесь</strong>
           <ul class="socials-list list">
@@ -362,5 +355,15 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+          <svg class="icon-close">
+            <use href="./images/icones/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
