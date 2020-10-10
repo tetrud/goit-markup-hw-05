@@ -11,6 +11,16 @@
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@keyframes line {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(100%);
+  }
+}
+
 body {
   background-color: var(--primary-white-color);
   color: var(--title-text-color);
@@ -123,6 +133,8 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
+
+  animation: line 1000ms var(--timing-function);
 }
 
 .navigation-link:hover,
